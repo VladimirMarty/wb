@@ -1,0 +1,7 @@
+.order__cardImage {
+    display: flex;
+    align-items: center;
+    width: 64px;
+    height: 31px;
+    margin: -6px 0 0 -20px;
+}

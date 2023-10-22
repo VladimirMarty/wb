@@ -1,0 +1,20 @@
+.order__checkbox {
+    border-radius: 8px;
+    border: none;
+    color: white;
+    background-color: #CB11AB;
+    width: 355px;
+    height: 65px;
+    padding: 1px 32px 5px 32px;
+    font-size: 24px;
+    margin: 11px 0 21px 0;
+}
+
+.order__checkbox:after {
+    content: 'Заказать';
+}
+
+.order__checkbox:hover:after {
+    content: 'Оплатить 1 016 сом';
+    transition: 0.5s;
+}

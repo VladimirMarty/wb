@@ -1,0 +1,16 @@
+.secondProduct {
+    height: 604px;
+}
+
+.secondProduct__header {
+    margin: 59px 20px 0 36px;
+    height: 49px;
+}
+
+.secondProduct__hide {
+    margin: -1px 3px 0 8px;
+}
+
+.secondProduct__buttons {
+    margin: 29px 180px 0px 0;
+}

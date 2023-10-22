@@ -1,0 +1,8 @@
+        .product__header {
+            display: flex;
+            justify-content: space-between;
+            width: 893px;
+            margin: 58px 46px -13px 34px;
+            border-bottom: 1px solid grey;
+            height: 34px;
+        }

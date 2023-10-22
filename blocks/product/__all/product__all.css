@@ -1,0 +1,5 @@
+.product__all {
+    display: flex;
+    justify-content: space-between;
+    margin: -12px 0 0 0;
+}

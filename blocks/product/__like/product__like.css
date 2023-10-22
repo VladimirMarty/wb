@@ -1,0 +1,13 @@
+.product__like {
+    /* background-image: url(../../../images/likeNonActive.svg); */
+    height: 30px;
+    width: 30px;
+}
+
+
+/* .product__like:hover {
+     background-image: url(../../../images/likeHover.svg); 
+
+
+}
+*/

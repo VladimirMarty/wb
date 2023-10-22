@@ -1,0 +1,7 @@
+.product__buttonChooseAll {
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+    border: 1px gray solid;
+    margin: -5px 17px 9px 0px;
+}

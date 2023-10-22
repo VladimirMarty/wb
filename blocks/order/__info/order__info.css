@@ -1,0 +1,9 @@
+.order__info {
+    display: flex;
+    background-color: #F6F6FA;
+    border-radius: 16px;
+    padding: 8px 8px 12px 8px;
+    margin: 13px 0px 32px 3px;
+    height: 60px;
+    width: 338px;
+}

@@ -1,0 +1,16 @@
+    .product__card {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .one {
+        margin: -15px 0 -5px -18px;
+    }
+    
+    .two {
+        margin: 4px 0 -5px -18px;
+    }
+    
+    .three {
+        margin: -25px 0 -5px -18px;
+    }

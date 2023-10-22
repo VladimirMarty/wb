@@ -1,0 +1,10 @@
+.order__placeDate {
+    margin: 0;
+    width: 44px;
+    font-size: 13px;
+    color: #CB11AB;
+    border-bottom: 1px dashed #CB11AB;
+    width: 65px;
+    font-size: 18px;
+    margin-top: 2px;
+}

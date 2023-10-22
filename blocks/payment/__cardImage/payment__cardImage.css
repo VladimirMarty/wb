@@ -1,0 +1,7 @@
+.payment__cardImage {
+    display: flex;
+    align-items: center;
+    margin: 11px 0 11px -10px;
+    width: 43px;
+    height: 38px;
+}

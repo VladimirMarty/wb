@@ -1,0 +1,6 @@
+.recipient__personalData {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 63px 0 0 0;
+}

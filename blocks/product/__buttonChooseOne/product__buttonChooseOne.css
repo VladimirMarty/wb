@@ -1,0 +1,7 @@
+.product__buttonChooseOne {
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+    border: 1px gray solid;
+    margin-top: -9px;
+}

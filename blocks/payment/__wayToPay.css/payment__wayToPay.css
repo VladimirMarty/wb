@@ -1,0 +1,5 @@
+.payment__wayToPay {
+    display: flex;
+    justify-content: space-between;
+    margin: 9px 0 0 9px;
+}

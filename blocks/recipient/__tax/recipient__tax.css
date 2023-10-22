@@ -1,0 +1,13 @@
+.recipient__tax {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 264px;
+    margin: -3px 0 0 -6px;
+    font-size: 23px;
+}
+
+.recipient__tax[type=text]::placeholder {
+    font-size: 17px;
+    margin: 4px 0 0 -2px;
+}

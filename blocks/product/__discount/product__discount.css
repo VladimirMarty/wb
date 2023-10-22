@@ -1,0 +1,6 @@
+    .product__discount {
+        font-size: 18px;
+        text-decoration: line-through;
+        border-bottom: 1px dashed #9797AF;
+        margin: 10px 0px 0 0;
+    }

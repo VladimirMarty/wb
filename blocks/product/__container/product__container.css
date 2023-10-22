@@ -1,0 +1,5 @@
+.product__container {
+    display: flex;
+    align-items: flex-start;
+    margin: 32px 0 7px 33px;
+}

@@ -1,0 +1,5 @@
+.delivery__way {
+    display: flex;
+    justify-content: space-between;
+    margin: 2px 2px 0 -16px;
+}

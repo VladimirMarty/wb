@@ -1,0 +1,10 @@
+.product__counter {
+    display: flex;
+    border-radius: 8px;
+    background-color: white;
+    width: 137px;
+    height: 57px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 34px 24px 0 0px;
+}

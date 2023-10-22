@@ -1,0 +1,5 @@
+.order__card {
+    display: flex;
+    align-items: center;
+    margin: 16px 0 -4px 10px;
+}

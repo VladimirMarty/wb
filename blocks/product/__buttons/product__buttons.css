@@ -1,0 +1,6 @@
+.product__buttons {
+    display: flex;
+    margin: -15px 19px 0px 0;
+    justify-content: space-between;
+    width: 81px;
+}

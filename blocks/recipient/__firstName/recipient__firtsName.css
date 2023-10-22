@@ -1,0 +1,8 @@
+.recipient__firstName {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 392px;
+    margin: -18px 0 0 4px;
+    font-size: 23px;
+}

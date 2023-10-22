@@ -1,0 +1,7 @@
+.product__price {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    margin: 29px -39px 0 0px;
+    width: 146px;
+}

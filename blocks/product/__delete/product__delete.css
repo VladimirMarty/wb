@@ -1,0 +1,10 @@
+.product__delete {
+    /* background-image: url(../../../images/deleteNonHover.svg); */
+    height: 30px;
+    width: 30px;
+}
+
+
+/* .product__delete:hover {
+    background-image: url(../../../images/basketHover.svg);
+} */

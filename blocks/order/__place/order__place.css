@@ -1,0 +1,5 @@
+.order__place {
+    display: flex;
+    justify-content: space-between;
+    margin: 38px 0 8px 0;
+}
