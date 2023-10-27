@@ -153,13 +153,67 @@ const validateInputs = () => {
 
 
 
+document.querySelectorAll('.accordion').forEach(function(el, index) {
+    el.addEventListener('click', function() {
+        el.classList.toggle('active');
+        el.nextElementSibling.style.display = el.nextElementSibling.style.display === 'block' ?
+            'none' :
+            'block';
+    });
 
-const hideTab = document.querySelector('product__hideBtn')
-const hideDiv = document.querySelector('div')
+    0 === index && (el.nextElementSibling.style.display = 'block');
+    1 === index && (el.nextElementSibling.style.display = 'block');
+});
+//Оля
+
+const selectAllGoods = document.querySelector('#all'),
+    selectOneGood = document.querySelector('#sel_one'),
+    selectTwoGood = document.querySelector('#sel_two'),
+    selectThreeGood = document.querySelector('#sel_three');
+//console.log(selectAllGoods);
 
 
+const goods = [selectOneGood, selectTwoGood, selectThreeGood];
+const selectedGoods = [];
 
-document.querySelector('product__buttonChooseAll ').onclick = function() {
-    div.remove();
+const selectAll = () => {
+    if (selectAllGoods.checked) {
+        goods.map(good => good.checked = true)
 
+    } else {
+        goods.map(good => good.checked = false)
+    }
+    console.log(goods);
 }
+selectAllGoods.addEventListener('change', selectAll)
+
+const goodItems = document.querySelectorAll('.card');
+goodItems.forEach(item => {
+    console.log(item);
+    const counter = item.querySelector('.product__counter');
+
+    const count = counter.querySelector('.product__quanity');
+    const finalPrice = item.querySelector('.product__finalPrice strong');
+    console.log(finalPrice);
+    const discountPrice = item.querySelector('.product__discount strong');
+    const incrementor = () => {
+        count.textContent = +count.textContent + 1
+    }
+    const decrementor = () => {
+
+        count.textContent = +count.textContent - 1
+    }
+    const changePrice = () => {
+        finalPrice.textContent = parseInt(finalPrice.textContent.replace(' ', '')) * parseInt(count.textContent)
+        discountPrice.textContent = parseInt(discountPrice.textContent.replace(' ', '')) * parseInt(count.textContent)
+    }
+
+    counter.querySelector('.product__plus').addEventListener('click', () => {
+        incrementor();
+        changePrice();
+    })
+    counter.querySelector('.product__minus').addEventListener('click', () => {
+        decrementor();
+        changePrice();
+    })
+})

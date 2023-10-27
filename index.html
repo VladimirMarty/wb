@@ -42,19 +42,22 @@
                         <h2 class="product__title">Корзина</h2>
                         <div class="product__header">
                             <div class="product__all">
-                                <button class="product__buttonChooseAll btn"></button>
-                                <p class="product__chooseAllText">Выбрать все</p>
+                                <!-- <button class="product__buttonChooseAll btn"></button> -->
+                                <input type="checkbox" name="all" id="all" class="product__buttonChooseAll btn">
+                                <label for="all" class="product__chooseAllText">Выбрать все</p>
                             </div>
-                            <button class="product__hideBtn"></button>
+                            <button class="product__hideBtn "></button>
                         </div>
-                        <div class="div">
-                            <div class="product__card ">
+                        <button class="accordion"></button>
+                        <div class="panel ">
+                            <div class="product__card card ">
                                 <div class="product__container">
                                     <div class="product__sdelatRovno">
-                                        <button class="product__buttonChooseOne btn"></button>
+                                        <!-- <button class="product__buttonChooseOne btn"></button> -->
+                                        <input type="checkbox" name="sel_one" id="sel_one" class="product__buttonChooseOne btn">
                                         <img class="product__image" alt="Футболка" src="./images/tee.png" />
                                     </div>
-                                    <div class="product__infoContainer">
+                                    <div class="product__infoContainer" article="t-short">
                                         <p class="product__name">Футболка UZcotton мужская</p>
                                         <div class="product__info">
                                             <p class="product__info1">Цвет: белый</p>
@@ -89,17 +92,19 @@
                                     </div>
                                 </div>
                                 <div class="product__price">
-                                    <p class="product__finalPrice">522 сом</p>
-                                    <p class="product__discount greyText">1051 сом</p>
+                                    <p class="product__finalPrice"><strong>522 сом</strong></p>
+                                    <p class="product__discount greyText"><strong>1051 сом</strong></p>
                                 </div>
                             </div>
 
-                            <div class="product__card ">
-                                <div class="product__container">
+                            <div class="product__card card">
+                                <div class="product__container" >
                                     <div class="product__sdelatRovno">
-                                        <button class="product__buttonChooseOne btn"></button>
+                                        <!-- <button class="product__buttonChooseOne btn"></button> -->
+                                        <input type="checkbox" name="sel_two" id="sel_two" class="product__buttonChooseOne btn">
+                                        
                                         <img class="product__image" alt="Телефон" src="./images/phone.png" /></div>
-                                    <div class="product__infoContainer">
+                                    <div class="product__infoContainer" article="case">
                                         <p class="product__name">
                                             Силиконовый чехол картхолдер (отверстия) для карт, прозрачный кейс бампер на Apple iPhone XR, MobiSafe
                                         </p>
@@ -115,9 +120,13 @@
                                 </div>
                                 <div class="product__wrap">
                                     <div class="product__counter">
-                                        <buttom class="product__plus"> <img class="product__plusImage" alt="Прибавить" src="./images/plus.svg"></buttom>
+                                        <buttom class="product__plus">
+                                            <img class="product__plusImage" alt="Прибавить" src="./images/plus.svg">
+                                        </buttom>
                                         <p class="product__quanity">1</p>
-                                        <buttom class="product__minus"><img class="product__minusImage" alt="Убавить" src="./images/minus.svg"></buttom>
+                                        <buttom class="product__minus">
+                                            <img class="product__minusImage" alt="Убавить" src="./images/minus.svg">
+                                        </buttom>
                                     </div>
                                     <p class="product__remainder">Осталось<span>1</span>шт.</p>
                                     <div class="product__buttons">
@@ -130,18 +139,20 @@
                                     </div>
                                 </div>
                                 <div class="product__price">
-                                    <p class="product__finalPrice">2 100 047 сом</p>
-                                    <p class="product__discount greyText">2 300 047 сом</p>
+                                    <p class="product__finalPrice"><strong> 100 047</strong> сом</p>
+                                    <p class="product__discount greyText"><strong>2 300 047</strong> сом</p>
                                 </div>
                             </div>
-                            <div class="product__card ">
+                            <div class="product__card card">
                                 <div class="product__container">
                                     <div class="product__sdelatRovno">
-                                        <button class="product__buttonChooseOne btn"></button>
+                                        <!-- <button class="product__buttonChooseOne btn"></button> -->
+                                        <input type="checkbox" name="sel_three" id="sel_three" class="product__buttonChooseOne btn">
+                                        
                                         <img class="product__image" alt="Книга" src="./images/book.png" />
 
                                     </div>
-                                    <div class="product__infoContainer">
+                                    <div class="product__infoContainer" article="pencil">
                                         <p class="product__name">
                                             Карандаши цветные Faber-Castell "Замок", набор 24 цвета, заточенные, шестигранные, Faber-Castell
                                         </p>
@@ -173,144 +184,85 @@
                                     </div>
                                 </div>
                                 <div class="product__price">
-                                    <p class="product__finalPrice">494 сом</p>
-                                    <p class="product__discount greyText">950 сом</p>
+                                    <p class="product__finalPrice"><strong>494</strong> сом</p>
+                                    <p class="product__discount greyText"><strong>950</strong> сом</p>
                                 </div>
                             </div>
                         </div>
                     </form>
 
-                    <!-- <form class="order">
-                    <div class="order__sum">
-                        <h2 class="order__sumTitle">Итого
-                        </h2>
-                        <h2 class="order__sumNumber">
-                            <span class="order__sumNumber-span">2 101 063</span> сом</h2>
-                    </div>
-                    <div class="order__total">
-                        <p class="order__totalQuanity">
-                            <span class="order__totalQuanity_span">203</span> товара
-                        </p>
-                        <p class="order__totalPrice">
-                            <span class="order__totalPrice_span">2 302 048 сом</span> сом</p>
-                    </div>
-                    <div class="order__discount">
-                        <p class="order__discountTitle">Скидка
-                        </p>
-                        <p class="order__discountSum">
-                            −<span class="order__discountSum_span">200 985</span> сом</p>
-                    </div>
-                    <div class="order__delivery">
-                        <p class="order__deliveryTitle">Доставка
-                        </p>
-                        <p class="order__deliveryPrice">
-                            Бесплатно</p>
-                    </div>
-                    <div class="order__place">
-                        <h3 class="order__placeTitle">Доставка в пункт выдачи</h3>
-                        <button class="order__placeButton"><img src="./images/Change.svg" alt=""></button>
-                    </div>
-                    <p class="order__placeAdress">Бишкек, улица Ахматбека Суюмбаева, 12/1</p>
-                    <p class="order__placeDate">5–8 фев</p>
-                    <div class="order__info">
-                        <img class="order__infoImage" src="./images/priceshipping.svg" alt="" />
-                        <p class="order__infoTitle">Обратная доставка товаров на склад при отказе —
-
-                            <abbr data-title="Если товары вам не подойдут, мы вернем их обратно на склад — это бесплатно" class="delivery__infoLink">
-                                бесплатно</abbr></p>
-                    </div>
-
-                    <div class="order__payment">
-                        <h3 class="order__paymentTitle">Оплата картой</h3>
-                        <button class="order__paymentButton"><img src="./images/Change.svg" alt=""></button>
-                    </div>
-                    <div class="payment__card ">
-                        <img class="payment__cardImage " src="./images/mir.svg" alt="" />
-                        <p class="payment__cardNumber ">1234 56•• •••• 1234</p>
-
-                    </div>
-                    <div class="order__check">
-                        <div class="order__checkPay">
-                            <button class="order__checkButton"></button>
-                            <p class="order__checkTitle">Списать оплату сразу</p>
-                        </div>
-                        <p class="order__checkInfo">Спишем оплату с карты при получении</p>
-                    </div>
-                    <button class="order__checkbox"></button>
-                    <div class="order__agree">
-                        <img class="order__agreeImage" src="./images/Path Copy 2 (Stroke).svg" alt=" ">
-                        <p class="order__agreeTitle">Соглашаюсь с правилами пользования торговой площадкой и возврата</p>
-                    </div>
-                </form> -->
                 </section>
                 <section class="product secondProduct">
                     <div class="product__header secondProduct__header">
                         <p class="product__witchMinus">Отстуствуют · <span>3</span> товара</p>
                         <button class="product__hideBtn secondProduct__hide"></button>
                     </div>
-                    <div class="product__card one ">
-                        <div class="product__container ">
+                    <button class="accordion"></button>
+                    <div class="panel ">
+                        <div class="product__card one ">
+                            <div class="product__container ">
 
-                            <img class="product__image greyImage" alt=" " src="./images/tee.png " />
-                            <div class="product__infoContainer">
-                                <p class="product__name greyText">Футболка UZcotton мужская</p>
-                                <div class="product__info ">
-                                    <p class="product__info1 greyText">Цвет: белый</p>
-                                    <p class="product__info2 greyText">Размер: 56</p>
+                                <img class="product__image greyImage" alt=" " src="./images/tee.png " />
+                                <div class="product__infoContainer">
+                                    <p class="product__name greyText">Футболка UZcotton мужская</p>
+                                    <div class="product__info ">
+                                        <p class="product__info1 greyText">Цвет: белый</p>
+                                        <p class="product__info2 greyText">Размер: 56</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__wrap ">
+                                <div class="product__buttons secondProduct__buttons">
+                                    <buttom class="product__like">
+                                        <img class='product__likeImage' src="./images/likeNonActive.svg" alt="">
+                                    </buttom>
+                                    <buttom class="product__delete">
+                                        <img class='product__deleteImage' src="./images/deleteNonHover.svg" alt="">
+                                    </buttom>
                                 </div>
                             </div>
                         </div>
-                        <div class="product__wrap ">
-                            <div class="product__buttons secondProduct__buttons">
-                                <buttom class="product__like">
-                                    <img class='product__likeImage' src="./images/likeNonActive.svg" alt="">
-                                </buttom>
-                                <buttom class="product__delete">
-                                    <img class='product__deleteImage' src="./images/deleteNonHover.svg" alt="">
-                                </buttom>
+                        <div class="product__card two ">
+                            <div class="product__container ">
+                                <img class="product__image greyImage" alt="Телефон " src="./images/phone.png " />
+                                <div class="product__infoContainer">
+                                    <p class="product__name greyText">
+                                        Силиконовый чехол картхолдер (отверстия) для карт, прозрачный кейс бампер на Apple iPhone XR, MobiSafe
+                                    </p>
+                                    <div class="product__info greyText">
+                                        <p class="product__info1 greyText">Цвет: прозрачный</p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="product__card two ">
-                        <div class="product__container ">
-                            <img class="product__image greyImage" alt="Телефон " src="./images/phone.png " />
-                            <div class="product__infoContainer">
-                                <p class="product__name greyText">
-                                    Силиконовый чехол картхолдер (отверстия) для карт, прозрачный кейс бампер на Apple iPhone XR, MobiSafe
-                                </p>
-                                <div class="product__info greyText">
-                                    <p class="product__info1 greyText">Цвет: прозрачный</p>
+                            <div class="product__wrap ">
+                                <div class="product__buttons secondProduct__buttons">
+                                    <buttom class="product__like">
+                                        <img class='product__likeImage' src="./images/likeNonActive.svg" alt="">
+                                    </buttom>
+                                    <buttom class="product__delete">
+                                        <img class='product__deleteImage' src="./images/deleteNonHover.svg" alt="">
+                                    </buttom>
                                 </div>
                             </div>
                         </div>
-                        <div class="product__wrap ">
-                            <div class="product__buttons secondProduct__buttons">
-                                <buttom class="product__like">
-                                    <img class='product__likeImage' src="./images/likeNonActive.svg" alt="">
-                                </buttom>
-                                <buttom class="product__delete">
-                                    <img class='product__deleteImage' src="./images/deleteNonHover.svg" alt="">
-                                </buttom>
+                        <div class="product__card three ">
+                            <div class="product__container ">
+                                <img class="product__image greyImage" alt="Книга " src="./images/book.png " />
+                                <div class="product__infoContainer">
+                                    <p class="product__name greyText">
+                                        Карандаши цветные Faber-Castell "Замок ", набор 24 цвета, заточенные, шестигранные, Faber-Castell
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="product__card three ">
-                        <div class="product__container ">
-                            <img class="product__image greyImage" alt="Книга " src="./images/book.png " />
-                            <div class="product__infoContainer">
-                                <p class="product__name greyText">
-                                    Карандаши цветные Faber-Castell "Замок ", набор 24 цвета, заточенные, шестигранные, Faber-Castell
-                                </p>
-                            </div>
-                        </div>
-                        <div class="product__wrap ">
-                            <div class="product__buttons secondProduct__buttons">
-                                <buttom class="product__like">
-                                    <img class='product__likeImage' src="./images/likeNonActive.svg" alt="">
-                                </buttom>
-                                <buttom class="product__delete">
-                                    <img class='product__deleteImage' src="./images/deleteNonHover.svg" alt="">
-                                </buttom>
+                            <div class="product__wrap ">
+                                <div class="product__buttons secondProduct__buttons">
+                                    <buttom class="product__like">
+                                        <img class='product__likeImage' src="./images/likeNonActive.svg" alt="">
+                                    </buttom>
+                                    <buttom class="product__delete">
+                                        <img class='product__deleteImage' src="./images/deleteNonHover.svg" alt="">
+                                    </buttom>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -471,62 +423,55 @@
             <p class="footer__logo">© 2022 ООО «Товары и точка»</p>
         </footer>
     </div>
-    <!-- <div class="popap popap_card ">
-        <div class="popap__conteiner ">
-            <div class="popap__body ">
-                <button type="button" class="popap__close-botton"> </button>
-                <form class="popap__form popap__form_card " novalidate>
-                    <h2 class="popap__text ">Способ оплаты</h2>
 
-                    <button class="popap__button " type="submit ">Выбрать</button>
-                </form>
-            </div>
-        </div>
-    </div> -->
 
     <div class="container">
         <form id="form" action="/">
             <h1>Registration</h1>
             <div class="input-control">
                 <label for="username">Username</label>
-                <input id="username" name="username" type="text">
-                <div class="error"></div>
-            </div>
-            <div class="input-control">
-                <label for="email">Email</label>
-                <input id="email" name="email" type="text">
-                <div class="error"></div>
-            </div>
-            <div class="input-control">
-                <label for="password">Password</label>
-                <input id="password" name="password" type="password">
-                <div class="error"></div>
-            </div>
-            <div class="input-control">
-                <label for="password2">Password again</label>
-                <input id="password2" name="password2" type="password">
-                <div class="error"></div>
-            </div>
-            <button type="submit">Sign Up</button>
-        </form>
-    </div>
+                                <input id="username" name="username" type="text">
+                                <div class="error"></div>
+                            </div>
+                            <div class="input-control">
+                                <label for="email">Email</label>
+                                <input id="email" name="email" type="text">
+                                <div class="error"></div>
+                            </div>
+                            <div class="input-control">
+                                <label for="password">Password</label>
+                                <input id="password" name="password" type="password">
+                                <div class="error"></div>
+                            </div>
+                            <div class="input-control">
+                                <label for="password2">Password again</label>
+                                <input id="password2" name="password2" type="password">
+                                <div class="error"></div>
+                            </div>
+                            <button type="submit">Sign Up</button>
+                    </form>
+                    </div>
 
 
 
-    <!-- Кнопка открытия модального окна -->
-    <!-- <button id="myBtn">Открыть окно</button> -->
 
-    <!-- Затемнение всей страницы при открытии окна -->
-    <div id="myModal" class="modal">
-        <!-- Содержимое модального окна -->
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <p>Контент модального окна</p>
-        </div>
-    </div>
 
-    <script src="./src/index.js">
-    </script>
+
+                    <!-- Кнопка открытия модального окна -->
+                    <!-- <button id="myBtn">Открыть окно</button> -->
+
+                    <!-- Затемнение всей страницы при открытии окна -->
+                    <div id="myModal" class="modal">
+                        <!-- Содержимое модального окна -->
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <p>Контент модального окна</p>
+                        </div>
+                    </div>
+
+
+                    <script src="./src/index.js">
+                    </script>
 </body>
 
 </html>
